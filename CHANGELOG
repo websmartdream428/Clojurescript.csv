@@ -1,0 +1,59 @@
+=== v0.5.1
+
+* Bug Fixes
+  * Fix handling of lone new line when reading data using carriage return and new line (contributed by @mainej in #24)
+
+=== v0.5.0
+
+* Bug Fixes
+  * Fix handling of trailing new lines (contributed by @mainej in #23)
+
+* Possibly breaking
+  * Now targeting Clojure 1.8 and ClojureScript 1.10.126
+
+=== v0.4.5
+
+* Bug Fixed
+  * Support non-string values in write-csv (contributed by @ephigabay in #15)
+
+=== v0.4.4
+
+* Fix parsing of new line after an empty field
+
+=== v0.4.3
+
+* Fix typo in write-csv docstring
+
+=== v0.4.2
+
+* Clean up code a little, no external changes
+
+=== v0.4.1
+
+* Bug Fixes
+  * Parse empty fields correctly (contributed by @cassc in #11)
+
+=== v0.4.0
+
+* Bug Fixes
+  * Add RFC 4180 compliance for write-csv (when :quote? true) and read-csv (always)
+
+=== v0.3.0
+
+* add support for user defined separator in read-csv. This mirrors the existing support in write-csv.
+* Breaking
+  * Option :quote is now :quote?
+
+=== v0.2.0 / 2015-07-17
+
+* Enhancements
+  * User can pass :quote true to wrap each field in quotes
+
+=== v0.1.1 / 2014-07-30
+
+* Bug Fixes
+  * No longer distribute test lib
+
+=== v0.1.0 / 2014-07-28
+
+* Initial Release
